@@ -25,10 +25,32 @@ body {
 	box-shadow: var(--shadow);
 }
 
-.header {
+.header,
+.size-selector {
 	padding-block: 12px;
 }
 
 .header h1 {
 	text-align: center;
+}
+
+.size-selector {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+}
+
+.size-selector button {
+	width: 64px;
+	font-size: 36px;
+	background-color: var(--color-blue);
+	color: var(--color-application);
+	border: 0;
+	border-radius: 4px;
+	box-shadow: var(--shadow);
+	aspect-ratio: 2 / 1;
+}
+
+.size-selector span {
+	align-self: center;
 }
