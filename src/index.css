@@ -18,3 +18,17 @@
 body {
 	background-color: var(--color-background);
 }
+
+.main {
+	padding: 12px;
+	background-color: var(--color-application);
+	box-shadow: var(--shadow);
+}
+
+.header {
+	padding-block: 12px;
+}
+
+.header h1 {
+	text-align: center;
+}
