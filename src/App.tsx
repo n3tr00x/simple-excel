@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Header } from './components/Header';
 import { MatrixSizeSelector } from './components/MatrixSizeSelector';
+import { Matrix } from './components/Matrix';
 
 export function App() {
 	const [matrixSize, setMatrixSize] = useState(4);
@@ -21,6 +22,7 @@ export function App() {
 				onIncreaseSize={handleIncreaseSize}
 				onDecreaseSize={handleDecreaseSize}
 			/>
+			<Matrix size={matrixSize} />
 		</main>
 	);
 }
