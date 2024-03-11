@@ -80,3 +80,12 @@ body {
 .error {
 	background-color: tomato;
 }
+
+.row-cell-sum {
+	font-size: 14px;
+	margin-left: 4px;
+}
+
+.total-cell-sum {
+	padding-block: 8px;
+}

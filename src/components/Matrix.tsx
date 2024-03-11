@@ -2,6 +2,8 @@ import { useCallback, useEffect, useState } from 'react';
 import { Cell } from './Cell';
 import { generateRandomNumber } from '../utilities/generateRandomNumber';
 import { CellData } from '../types/CellData';
+import { RowCellSum } from './RowCellSum';
+import { TotalCellSum } from './TotalCellSum';
 
 type MatrixProps = {
 	size: number;
@@ -41,6 +43,7 @@ export function Matrix({ size }: MatrixProps) {
 
 	return (
 		<div className="matrix">
+			<TotalCellSum matrix={matrix} />
 			{matrix.map((row, rowIndex) => (
 				<div className="row" key={rowIndex}>
 					{row.map(cell => (
@@ -50,6 +53,7 @@ export function Matrix({ size }: MatrixProps) {
 							onChange={handleCellValueChange}
 						/>
 					))}
+					<RowCellSum row={row} />
 				</div>
 			))}
 		</div>
