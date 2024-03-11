@@ -1,0 +1,20 @@
+:root {
+	--color-background: #f1f5f9;
+	--color-application: #fff;
+	--shadow: 0 12px 16px -4px rgb(0, 0, 0, 0.1), 0 4px 8px -4px rgb(0, 0, 0, 0.1);
+	--rounded: 12px;
+	--color-blue: #0369a1;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: var(--color-background);
+}
